@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <style media="screen">
+      body{
+        background-color: #00917c;
+      }
+
+      .login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background:#23463f;
+        border-radius: 15px;
+      }
+      h1{
+        text-align: center;
+        color: #aa2b1d;
+      }
+      label{
+        color: #08ffd1;
+        font-size: 17px;
+      }
+      #Uname{
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 6px;
+        padding: 8px;
+        background-color: #ffb26b;
+
+      }
+      #pass{
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 6px;
+        padding: 8px;
+        background-color: #ffb26b;
+      }
+      strong{
+        color: red;
+      }
+
+      /* #message{
+        display: none;
+        background: #f1f1f1;
+        color: #000;
+        position: relative;
+        padding: 20px;
+        margin-top: 10px;
+      }
+      #message p{
+        padding: 10px 35px;
+        font-size: 40px;
+      }
+       */
+
+      #log{
+        width: 300px;
+        height: 50px;
+        border: none;
+        border-radius: 17px;
+        color: blue;
+        font-size: 30px;
+        background-color: #ffb26b;
+      }
+      span{
+        color: white;
+        font-size: 20px;
+      }
+      .ap{
+        float: right;
+        background-color: grey;
+      }
+      a{
+      color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Login Page</h1><br>
+    <a href="index1.html"><<b>Back</b></a>
+    <div class="login">
+      <form id="login" action="index1.html" method="get">
+        <label for="name"><b>User Name</b> <strong>*</strong></label>
+        <input type="text" name="Uname" id="Uname" placeholder="UserName" required>
+        <br><br>
+        <label><b>Password</b> <strong>*</strong></label>
+        <input type="Password" name="pass" id="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+        <button type="button" name="log" id="log" ><a href="main.html">𝕷𝖔𝖌 𝕴𝖓</a></button>
+
+        <br>
+        <br>
+        <p>Don't have an account? <a href="sign-up.html"><strong>Register</strong></a> here</p>
+
+        <div class="ap">
+          <a href="#"><b>Forgot Password</b></a>
+
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
