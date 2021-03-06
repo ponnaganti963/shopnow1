@@ -6,19 +6,19 @@
     <link rel="icon" href="favicon.ico">
     <style media="screen">
       body{
-        background-color: #f9f3f3 ;
+        background-color: #98ded9 ;
       }
       .container1{
         border-radius: 12px;
-        background: #025955;
+        background: #28527a;
         text-align: center;
         padding: 40px;
         height: 95px;
       }
       #forms{
-        margin: auto;
+        margin: auto 20% auto 20%;
         border-radius: 10px;
-        background: #a4ebf3;
+        background: #28527a;
         text-align: center;
         padding: 20px;
         height: 400px;
@@ -29,7 +29,7 @@
         height: 30px;
         border: none;
         border-radius: 6px;
-        padding: 4px;
+        padding: 8px;
       }
       #Usname{
         width: 250px;
@@ -77,11 +77,18 @@
       }
 
       a{
-        color: dodgerblue;
+        text-decoration: none;
+        color: red;
+      }
+      a :hover{
+        color: #949cdf;
+      }
+      .as p{
+        margin-left: 20%;
       }
       .registerbtn{
+        margin-left: 25%;
         background-color: #f2a154;
-        color: white;
         border: none;
         text-decoration: none;
         cursor: pointer;
@@ -93,11 +100,25 @@
       }
 
 
-      .registerbtn{
+      .registerbtn :hover{
         opacity: 1;
+        border-color: black;
+        color: blue;
       }
+      .container-signin{
+        margin-left: 20%;
+      }
+      .container-signin a{
 
-
+        font-size: 20px;
+      }
+      .container-signin a :hover{
+        color: #949cdf;
+      }
+      .ba{
+        font-size: 20px;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -110,7 +131,7 @@
       </div>
         <hr>
         <br>
-        <a href="index1.html"><<b>Back</b></a>
+        <a class="ba" href="index1.html"><<b>Back</b></a>
       <div class="as">
 
       <form id="forms" action="index1.html" method="get">
@@ -139,7 +160,7 @@
          <button type="button" class="registerbtn"><a href="su-reg.html">𝕽𝖊𝖌𝖎𝖘𝖙𝖊𝖗</a></button>
       </div>
 
-      <div class="container signin">
+      <div class="container-signin">
         <p>Already have an account? <a href="login.html">Sign in</a>.</p>
 
       </div>
