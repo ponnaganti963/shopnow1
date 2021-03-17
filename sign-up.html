@@ -7,61 +7,64 @@
   <title>Registeration page</title>
   <link rel="icon" href="favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kaushan+Script&family=Lora:ital@1&family=Redressed&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
   <style media="screen">
-  body {
-    background-color: #a7c5eb;
-    /* background-image: url("shopnowlogo.jpeg"); */
-  }
+    body {
+      background-color: #a7c5eb;
+    }
 
-  .container1 {
-    font-family: 'Lora', serif;
-    border-radius: 12px;
-    color: white;
-    background: #28527a;
-    font-size: 20px;
-    text-align: center;
-    padding: 40px;
-    height: 200px;
-  }
-  h1{
-    font-family: 'Akaya Telivigala', cursive;
-    font-size: 60px;
-  }
-  strong {
-    color: red;
-  }
+    .container1 {
+      font-family: 'Lora', serif;
+      border-radius: 12px;
+      color: white;
+      background: #28527a;
+      font-size: 20px;
+      text-align: center;
+      padding: 40px;
+      height: 200px;
+    }
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+    h1 {
+      font-family: 'Akaya Telivigala', cursive;
+      font-size: 60px;
+    }
 
-  .as{
-    background-image: url("shop.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: #b4aee8;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 20px;
-  }
-  #forms{
-    margin-left: 35px;
+    strong {
+      color: red;
+    }
 
-  }
-  .ba {
-    font-size: 20px;
-    color: black;
-  }
-  #reg :hover{
-    color: red;
-  }
-</style>
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .as {
+      background-image: url("shop.jpeg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-color: #b4aee8;
+      margin: 10px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    #forms {
+      margin-left: 35px;
+
+    }
+
+    .ba {
+      font-size: 20px;
+      color: black;
+    }
+    .modal-content{
+      font-family: 'Redressed', cursive;
+      font-size: 30px;
+    }
+  </style>
 </head>
 
 <body>
@@ -131,7 +134,7 @@
         </div>
       </div>
       <div class="row g-3 align-items-center" style="padding: 10px">
-        <div class="col-auto" >
+        <div class="col-auto">
           <label for="inputPassword6" class="col-form-label"><b>Conform Password</b> <strong>*</strong></label>
         </div>
         <div class="col-auto">
@@ -144,12 +147,29 @@
         </div>
       </div>
       <div class="form-check form-check-inline" style="padding: 15px; margin-left:20px">
-        <input class="form-check-input" type="checkbox"  id="flexCheckIndeterminate">
+        <input class="form-check-input" type="checkbox" id="flexCheckIndeterminate">
         <label class="form-check-label" for="flexCheckIndeterminate">
           I Read and agree <a href="terms&conditons.html">Terms & Conditons</a>.
         </label>
       </div><br>
-      <button type="button" id="reg" class="btn btn-primary" style="padding:10px 30px 10px 30px; font-size: 20px; margin-left: 30px"><a href="su-reg.html">𝕽𝖊𝖌𝖎𝖘𝖙𝖊𝖗</a></button>
+      <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="padding:10px 30px 10px 30px; font-size: 20px; margin-left: 30px">𝕽𝖊𝖌𝖎𝖘𝖙𝖊𝖗</button>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Registeration</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              You have been Successfully Registered.
+              click <strong>OK</strong> to save.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container-signin" style="padding: 20px">
         <p><b>Already have an account? <a href="login.html">Sign in</a>.</b></p>
       </div>
