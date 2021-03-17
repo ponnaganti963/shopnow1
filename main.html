@@ -12,65 +12,20 @@
     body {
       background-color: #EDFBE1;
     }
-
-    @media screen and (min-widht: 418px) {
-      body{
-        background-color: red;
-      }
-    }
-
     .myba {
       background-color: #28527a;
       text-align: center;
       border-radius: 10px;
       padding: 40px;
     }
-
-    .sub {
-      overflow: hidden;
-      background-color: #e9e9e9;
-    }
-
-    .sub a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      font-size: 20px;
-    }
-
-    .sub a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .sub input[type=text] {
-      float: right;
-      padding: 10px;
-      border: none;
-      margin-top: 10px;
-      margin-right: 20px;
-      font-size: 18px;
-      font-style: italic;
-    }
-
     .ma img {
       width: 100%;
       height: 200px;
     }
-
     img {
       width: 300px;
       border-radius: 8px;
     }
-
-    img :hover {
-      transform: scale3d();
-    }
-
-
-
     tbody tr :hover {
       color: white;
     }
@@ -92,48 +47,65 @@
     <h1>░S░h░o░p░ ░N░o░w░</h1>
     <p>Keep shoping easyily and safely</p>
   </div>
-  <div class="sub">
-    <input type="text" placeholder="Search....."><br><br><br>
-    <a href="main.html">
-      <h2>»𝐇𝐨𝐦𝐞</h2>
-    </a>
-    <a href="#">
-      <h2>»My Cart</h2>
-    </a>
-    <a href="#">
-      <h2>»Settings</h2>
-    </a>
-    <a href="logout.html">
-      <h2>»Logout</h2>
-    </a>
+
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <a class="navbar-brand" href="#">SHOP NOW</a>
+        <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">»𝐇𝐨𝐦𝐞</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»My account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»My Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="logout.html">»Logout</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Searching.." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
   </div>
+
   <div class="ma">
     <a href="#"><img src="car3.jpg" /></a>
   </div>
 
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 5% auto">
-  <div class="carousel-inner" >
-    <div class="carousel-item active" >
-      <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block w-100" style="height: 200px" alt="...">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block w-100" style="height: 200px" alt="...">
+      </div>
+      <div class="carousel-item" style="height: 200px">
+        <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-100" style="height: 200px" alt="...">
+      </div>
+      <div class="carousel-item" style="height: 200px">
+        <img src="shop.jpeg" class="d-block w-100" style="height: 250px" alt="...">
+      </div>
     </div>
-    <div class="carousel-item" style="height: 200px">
-      <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-100"  style="height: 200px" alt="..." >
-    </div>
-    <div class="carousel-item" style="height: 200px">
-      <img src="shop.jpeg" class="d-block w-100" style="height: 250px" alt="..." >
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-  <div class="container-fluid"  style="padding-left: 1.5rem">
+  <div class="container-fluid" style="padding-left: 1.5rem">
     <div class="row">
       <div class="col-auto" style="padding: 10px">
         <a href="one-plus.html">
@@ -149,7 +121,7 @@
       <div class="col-auto" style="padding: 10px">
         <a href="#">
           <div class="card" style="width: 160px; height: 180px">
-            <img src="rolex.jfif" class="card-img-top"  alt="" />
+            <img src="rolex.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0" style="overflow: hidden;background-color: #e9e9e9;border-radius: 8px;  text-align: center;">
               <p>Rolex Watch</p>
               <p class="text-muted">₹ 25,000</p>
@@ -160,7 +132,7 @@
       <div class="col-auto" style="padding: 10px">
         <a href="one-plus.html">
           <div class="card " style="width: 160px; height: 180px">
-            <img src="oneplus.jfif" class="card-img-top"  alt="" />
+            <img src="oneplus.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0" style="overflow: hidden;background-color: #e9e9e9;border-radius: 8px;  text-align: center;">
               <p>One Plus Nord 5g</p>
               <p class="text-muted">₹ 29,000</p>
@@ -204,16 +176,16 @@
     </div>
   </div>
 
-  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" style="margin: 2% auto" >
-  <div class="carousel-inner" style="background-color: #fff">
-    <div class="carousel-item active"  >
+  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" style="margin: 2% auto">
+    <div class="carousel-inner" style="background-color: #fff">
+      <div class="carousel-item active">
         <div class="row">
           <div class="col-3 " style="padding: 2% 5%">
-              <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block " style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
-              <p class="text-muted" style="margin-left: 1rem">kitchen</p>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block " style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <p class="text-muted" style="margin-left: 1rem">kitchen</p>
           </div>
           <div class="col-3" style="padding: 2% 5%">
-            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5"  style="width: 6rem;height: 100px;border-radius: 100%" alt="..." >
+            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
             <p class="text-muted" style="margin-left: 1rem">electronics</p>
           </div>
           <div class="col-3" style="padding: 2% 5%">
@@ -221,22 +193,22 @@
             <p class="text-muted" style="margin-left: 1rem">shoes</p>
           </div>
           <div class="col-3" style="padding: 2% 5%">
-            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5"  style="width: 6rem;height: 100px;border-radius: 100%" alt="..." >
+            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
           </div>
         </div>
+      </div>
+      <div class="carousel-item" style="padding: 2% 5%">
+        <img src="shop.jpeg" class="d-block w-5" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+      </div>
     </div>
-    <div class="carousel-item" style="padding: 2% 5%">
-      <img src="shop.jpeg" class="d-block w-5" style="width: 6rem;height: 100px;border-radius: 100%" alt="..." >
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"  data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
 
