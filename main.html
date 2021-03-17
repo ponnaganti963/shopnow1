@@ -6,26 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <style media="screen">
     body {
-      background-color: #EDFBE1;
+      background-color: #fff;
     }
     .myba {
-      background-color: #28527a;
+      background-color: lightblue;
       text-align: center;
       border-radius: 10px;
       padding: 40px;
     }
+    /* .navb{
+      position: sticky;
+    } */
+    #footer{
+      text-align: center;
+    }
+    #footer i{
+      margin: 1%;
+    }
+    #footer p{
+      margin: 2%;
+    }
     .ma img {
       width: 100%;
       height: 200px;
-    }
-    img {
-      width: 300px;
       border-radius: 8px;
+      margin: 1% auto;
     }
+
     tbody tr :hover {
       color: white;
     }
@@ -48,7 +60,7 @@
     <p>Keep shoping easyily and safely</p>
   </div>
 
-  <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="navbar navb navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
@@ -83,7 +95,7 @@
     <a href="#"><img src="car3.jpg" /></a>
   </div>
 
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 5% auto">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 1% auto;">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block w-100" style="height: 200px" alt="...">
@@ -212,14 +224,14 @@
   </div>
 
 
-  <div class="container-fluid" style="background-color: #28527a; text-align: center; bottom:0">
+  <div class="container-fluid" style="background-color: lightblue; text-align: center; bottom:0">
     <table class="table table-borderless">
       <thead>
         <tr>
-          <th class="w-5" scope="col">
+          <th scope="col">
             <h3>Get to know us</h3>
           </th>
-          <th class="w-5" scope="col">
+          <th scope="col">
             <h3>Let Us Help You</h3>
           </th>
         </tr>
@@ -244,7 +256,13 @@
       </tbody>
     </table>
   </div>
-
+   <footer id="footer">
+     <i class="bi bi-facebook"></i>
+     <i class="bi bi-instagram"></i>
+     <i class="bi bi-twitter"></i>
+     <i class="bi bi-linkedin"></i>
+     <p>© Copyright 2021 Shopnow</p>
+   </footer>
 </body>
 
 </html>
