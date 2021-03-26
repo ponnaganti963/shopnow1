@@ -1,151 +1,210 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Oneplus Product</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <style media="screen">
-      body{
-        background-color: #fff;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oneplus Product</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    .sub{
+  <style media="screen">
+    body {
+      background-color: #fff;
+    }
+
+    .sub {
       overflow: hidden;
       background-color: #e9e9e9;
     }
-    .image1 img{
-      margin: 2rem;
-      height: 20rem;
-      width: 20rem;
-    }
-     .flex{
+
+    .flex {
       display: flex;
       flex-wrap: wrap;
     }
-    .details{
+
+    .image1 img {
+      margin: 2rem;
+
+      width: 20rem;
+    }
+
+    .details {
       padding-top: 5%;
     }
-.buying button{
-  width: 10rem;
-  margin: 2rem auto;
-}
 
-    #footer{
+    .buying button {
+    width: 20rem;
+      margin: 0.5rem 1rem;
+    }
+
+    .gap {
+      margin: 0.5rem auto;
+    }
+
+    #footer {
       text-align: center;
     }
-    #footer i{
-      margin:1%;
-    }
-    #footer p{
-      margin: 2% ;
-    }
-    tbody tr :hover {
-      color: white;
+
+    #footer i {
+      margin: 1%;
     }
 
-    </style>
-  </head>
-  <body>
+    #footer p {
+      margin: 2%;
+    }
+  </style>
+</head>
 
-    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">SHOP NOW</a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
+<body>
 
-          <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="main.html">»𝐇𝐨𝐦𝐞</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">»My account</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">»My Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">»Settings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="logout.html">»Logout</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Searching.." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+  <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SHOP NOW</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+
+        <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">»𝐇𝐨𝐦𝐞</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»My account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»My Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="logout.html">»Logout</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Searching.." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="d-flex flex">
+      <div class="image1">
+        <img src="oneplus4.jpg" alt="">
+      </div>
+      <div class="col-lg-6 col-sm-12 details">
+        <h2>OnePlus Nord 5G Unlocked Smartphone, 90Hz Refresh Rate, 6GB RAM + 128GB storage, US Version, Model BE2026</h2>
+        <div class="buying">
+          <p>Price: ₹ <del>29,000</del> <ins style="text-decoration: none">28,999</ins></p>
+          <p>FREE delivery</p>
+          <p>Order within 20hrs .</p>
+          <h3 style="color: green">In Stock.</h3>
+            <div >
+              <button type="button" class="btn btn-lg" style="background-color: #f0a500" name="button">Add to Chart</button>
+              <button type="button" class="btn btn-lg btn-warning" name="button">Buy</button>
+            </div>
         </div>
       </div>
     </div>
 
+    <div class="container-fluid">
 
-   <div class="container">
-     <div class="d-flex flex ">
-       <div  class="image1">
-         <img src="oneplus.jfif" alt="">
-       </div>
-       <div class="col-lg-6 col-sm-12 details">
-         <h2>OnePlus Nord  5G Unlocked Smartphone,  90Hz Refresh Rate, 6GB RAM + 128GB storage, US Version, Model BE2026</h2>
-
-       </div>
-     </div>
-     <div class="container-fluid" >
-       <div class="buying" >
-         <p>Price: ₹ <del>29,000</del> <ins style="text-decoration: none">28,999</ins></p>
-         <p>FREE delivery</p>
-         <p>Order within 20hrs .</p>
-         <h3 style="color: green">In Stock.</h3>
-         <button type="button" class="btn btn-lg btn-warning" name="button">Add to Chart</button>
-         <button type="button" class="btn btn-lg btn-warning" name="button">Buy</button>
-       </div>
-     </div>
-   </div>
-
-    <div class="container-fluid" style="background-color: lightblue; text-align: center; bottom:0">
-      <table class="table table-borderless">
-        <thead>
-          <tr>
-            <th class="w-5" scope="col">
-              <h3>Get to know us</h3>
-            </th>
-            <th class="w-5" scope="col">
-              <h3>Let Us Help You</h3>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>careers</td>
-            <td>Your Account</td>
-          </tr>
-          <tr>
-            <td>About Shop Now</td>
-            <td>Your Orders</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Return & Replacement</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Shop Now Assistant</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
-    
-  </body>
+  </div>
+  <div class="container">
+    <div class="title">
+      <h2>Features & Details</h2>
+    </div>
+    <ul class="row">
+      <li class="col-lg-6 col-sm-12 gap ">5G – Upgrade to the next stage of mobile technology, OnePlus Nord N10 5G packs an ultra-fast punch. Stay connected and enjoy the digital world without the long load times.</li>
+      <li class="col-lg-6 col-sm-12 gap">Warp Charge 30T – Delivering a day’s power in 30 minutes, Warp Charge 30T combined with a massive battery gives you more time with your phone and less time charging.</li>
+      <li class="col-lg-6 col-sm-12 gap">90Hz Display – Sporting a display that refreshes 50% faster than standard 60Hz displays, the N10 5G display is super responsive and smooth.</li>
+      <li class="col-lg-6 col-sm-12 gap">Quad Camera – Unleash your inner photographer with the Nord N10 5G’s 64MP main camera, or capture other details with the ultra-wide, macro, or monochrome lens for additional options.</li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="title">
+      <h2>Product Images</h2>
+    </div>
+    <div class="container-img">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <img src="oneplus3.jpg" alt="i am image" height="700px" width="320px" style="margin: 20px auto">
+        </div>
+        <div class="col-lg-6 col-sm-12" style="margin: auto; line-height: 2">
+          <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
+            performance.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <img src="oneplus4.jpg" alt="" height="700px" width="320px" style="margin: 20px auto">
+      </div>
+      <div class="col-lg-6 col-sm-12" style="margin: auto; line-height: 2">
+        <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
+          performance.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <img src="oneplus5.jpg" alt="i am image" height="700px" width="320px" style="margin: 20px auto">
+      </div>
+      <div class="col-lg-6 col-sm-12" style="margin: auto; line-height: 2">
+        <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
+          performance.</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <div class="container-fluid" style="background-color: lightblue; text-align: center; ">
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th class="w-5" scope="col">
+            <h3>Get to know us</h3>
+          </th>
+          <th class="w-5" scope="col">
+            <h3>Let Us Help You</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>careers</td>
+          <td>Your Account</td>
+        </tr>
+        <tr>
+          <td>About Shop Now</td>
+          <td>Your Orders</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Return & Replacement</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Shop Now Assistant</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <footer id="footer">
-      <i class="bi bi-facebook"></i>
-      <i class="bi bi-instagram"></i>
-      <i class="bi bi-twitter"></i>
-      <i class="bi bi-linkedin"></i>
-      <p>© Copyright 2021 Shopnow</p>
-    </footer>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-linkedin"></i>
+    <p>© Copyright 2021 Shopnow</p>
+  </footer>
+</body>
+
 </html>
