@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Logout</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <style media="screen">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logout</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <style media="screen">
     body {
-      background-color: #fff;
+      background-color: #e7e7de;
     }
+
     .myba {
       background-color: lightblue;
       text-align: center;
       border-radius: 10px;
       padding: 40px;
     }
-    #footer{
+
+    #footer {
       text-align: center;
     }
-    #footer i{
-      margin: 1% ;
+
+    #footer i {
+      margin: 1%;
     }
-    #footer p{
-      margin: 2% ;
+
+    #footer p {
+      margin: 2%;
     }
+
     .ma img {
       width: 100%;
       height: 200px;
       border-radius: 8px;
       margin: 1% auto;
     }
-    .flex{
+
+    .flex {
       display: flex;
       justify-content: space-around;
 
     }
-    .img_1{
-       background-color:  blue;
+
+    .img_1 {
+      background-color: blue;
       background-blend-mode: difference;
     }
-    .stylecard{
+
+    .stylecard {
       width: 160px;
       height: 180px;
     }
-    .stylecard:hover{
-     box-shadow: 0 10px 50px rgba( 0, 0, 255, .2);
+
+    .stylecard:hover {
+      box-shadow: 0 10px 50px rgba(0, 0, 255, .2);
     }
-    .styling{
+
+    .styling {
       overflow: hidden;
 
       text-align: center;
       background-color: #fff;
     }
+
     tbody tr :hover {
       color: white;
     }
@@ -70,221 +82,226 @@
       color: blue;
     }
   </style>
-  </head>
-  <body>
+</head>
 
-    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand"  id="navname" href="#">Shop Now</a>
-        
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+<body>
 
-          <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarToggler">
+  <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="navname" href="#">Shop Now</a>
 
-          <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
-            <li class="nav-item">
-              <a class="nav-link active" href="login.html">»LogIn</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="main.html">»𝐇𝐨𝐦𝐞</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">»My account</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">»My Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#">»Settings</a>
-            </li>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Searching.." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+
+        <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">»𝐇𝐨𝐦𝐞</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              »My account
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="login.html">LogIn</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»My Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»Settings</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Searching.." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
+  </div>
 
-    <div class="myba" style="color: white">
-      <h1>░S░h░o░p░ ░N░o░w░</h1>
-      <p>Keep shoping easyily and safely</p>
-    </div>
+  <div class="myba" style="color: white">
+    <h1>░S░h░o░p░ ░N░o░w░</h1>
+    <p>Keep shoping easyily and safely</p>
+  </div>
 
-    <div class="ma">
-      <a href="#"><img src="car3.jpg" /></a>
-    </div>
+  <div class="ma">
+    <a href="#"><img src="car3.jpg" /></a>
+  </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 1% auto;">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block w-100" style="height: 200px" alt="...">
-        </div>
-        <div class="carousel-item" style="height: 200px">
-          <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-100" style="height: 200px" alt="...">
-        </div>
-        <div class="carousel-item" style="height: 200px">
-          <img src="shop.jpeg" class="d-block w-100" style="height: 250px" alt="...">
-        </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 1% auto;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block w-100" style="height: 200px" alt="...">
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <div class="container-fluid" style="padding-left: 1.5rem">
-      <div class="row flex">
-        <div class="col-auto" style="padding: 10px">
-          <a href="one-plus.html">
-            <div class="card stylecard">
-              <img src="oneplus.jfif" class="card-img-top" alt="" />
-              <div class="card-body p-0 styling" >
-                <p>One Plus Nord 5g</p>
-                <p class="text-muted">₹ 29,000</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto" style="padding: 10px">
-          <a href="#">
-            <div class="card stylecard" >
-              <img src="rolex.jfif" class="card-img-top" alt="" />
-              <div class="card-body p-0 styling" >
-                <p>Rolex Watch</p>
-                <p class="text-muted">₹ 25,000</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto" style="padding: 10px">
-          <a href="#">
-            <div class="card stylecard " >
-              <img src="nikeshoes.JPG" class="card-img-top" alt="" />
-              <div class="card-body p-0 styling" >
-                <p>Nike Shoes</p>
-                <p class="text-muted">₹ 2,570</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto" style="padding: 10px">
-          <a href="#">
-            <div class="card stylecard " >
-              <img src="iPad.jpg" class="card-img-top" height="110" alt="" />
-              <div class="card-body p-0 styling" >
-                <p>iPad</p>
-                <p class="text-muted">₹ 48,470</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-auto" style="padding: 10px">
-          <a href="#">
-            <div class="card stylecard">
-              <img src="iphonemobile.JPG" class="card-img-top" alt="" />
-              <div class="card-body p-0 styling">
-                <p>iphone mobile</p>
-                <p class="text-muted">₹ 46,809</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto" style="padding: 10px">
-          <a href="#">
-            <div class="card stylecard" >
-              <img src="rolex.jfif" class="card-img-top" alt="" />
-              <div class="card-body p-0 styling" >
-                <p>Rolex Watch</p>
-                <p class="text-muted">₹ 25,000</p>
-              </div>
-            </div>
-          </a>
-        </div>
+      <div class="carousel-item" style="height: 200px">
+        <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-100" style="height: 200px" alt="...">
+      </div>
+      <div class="carousel-item" style="height: 200px">
+        <img src="shop.jpeg" class="d-block w-100" style="height: 250px" alt="...">
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" style="margin: 2% auto">
-      <div class="carousel-inner" style="background-color: #fff">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-3 "   style="padding: 2% 5%">
-              <img src="kitchen.jfif" class="d-block img_1 "  style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
-              <p class="text-muted" style="margin-left: 1rem">kitchen</p>
-            </div>
-            <div class="col-3" style="padding: 2% 5%">
-              <img src="electronic_devices.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
-              <p class="text-muted" style="margin-left: 1rem">electronics</p>
-            </div>
-            <div class="col-3" style="padding: 2% 5%">
-              <img src="shoes.jpeg" class="d-block img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
-              <p class="text-muted" style="margin-left: 1rem">shoes</p>
-            </div>
-            <div class="col-3" style="padding: 2% 5%">
-              <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+  <div class="container-fluid" style="padding-left: 1.5rem">
+    <div class="row flex">
+      <div class="col-auto" style="padding: 10px">
+        <a href="one-plus.html">
+          <div class="card stylecard">
+            <img src="oneplus.jfif" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling">
+              <p>One Plus Nord 5g</p>
+              <p class="text-muted">₹ 29,000</p>
             </div>
           </div>
-        </div>
-        <div class="carousel-item" style="padding: 2% 5%">
-          <img src="shop.jpeg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+        </a>
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <a href="#">
+          <div class="card stylecard">
+            <img src="rolex.jfif" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling">
+              <p>Rolex Watch</p>
+              <p class="text-muted">₹ 25,000</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <a href="#">
+          <div class="card stylecard ">
+            <img src="nikeshoes.JPG" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling">
+              <p>Nike Shoes</p>
+              <p class="text-muted">₹ 2,570</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <a href="#">
+          <div class="card stylecard ">
+            <img src="iPad.jpg" class="card-img-top" height="110" alt="" />
+            <div class="card-body p-0 styling">
+              <p>iPad</p>
+              <p class="text-muted">₹ 48,470</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-auto" style="padding: 10px">
+        <a href="#">
+          <div class="card stylecard">
+            <img src="iphonemobile.JPG" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling">
+              <p>iphone mobile</p>
+              <p class="text-muted">₹ 46,809</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <a href="#">
+          <div class="card stylecard">
+            <img src="rolex.jfif" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling">
+              <p>Rolex Watch</p>
+              <p class="text-muted">₹ 25,000</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" style="margin: 2% auto">
+    <div class="carousel-inner" style="background-color: #fff">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-3 " style="padding: 2% 5%">
+            <img src="kitchen.jfif" class="d-block img_1 " style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <p class="text-muted" style="margin-left: 1rem">kitchen</p>
+          </div>
+          <div class="col-3" style="padding: 2% 5%">
+            <img src="electronic_devices.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <p class="text-muted" style="margin-left: 1rem">electronics</p>
+          </div>
+          <div class="col-3" style="padding: 2% 5%">
+            <img src="shoes.jpeg" class="d-block img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <p class="text-muted" style="margin-left: 1rem">shoes</p>
+          </div>
+          <div class="col-3" style="padding: 2% 5%">
+            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="carousel-item" style="padding: 2% 5%">
+        <img src="shop.jpeg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+      </div>
     </div>
-    <div class="container-fluid" style="background-color: lightblue; text-align: center; bottom:0">
-      <table class="table table-borderless">
-        <thead>
-          <tr>
-            <th scope="col">
-              <h3>Get to know us</h3>
-            </th>
-            <th scope="col">
-              <h3>Let Us Help You</h3>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>careers</td>
-            <td>Your Account</td>
-          </tr>
-          <tr>
-            <td>About Shop Now</td>
-            <td>Your Orders</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Return & Replacement</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Shop Now Assistant</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container-fluid" style="background-color: lightblue; text-align: center; bottom:0">
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">
+            <h3>Get to know us</h3>
+          </th>
+          <th scope="col">
+            <h3>Let Us Help You</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>careers</td>
+          <td>Your Account</td>
+        </tr>
+        <tr>
+          <td>About Shop Now</td>
+          <td>Your Orders</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Return & Replacement</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Shop Now Assistant</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  </body>
+</body>
 
-  <footer id="footer">
-    <i class="bi bi-facebook"></i>
-    <i class="bi bi-instagram"></i>
-    <i class="bi bi-twitter"></i>
-    <i class="bi bi-linkedin"></i>
-    <p>© Copyright 2021 Shopnow</p>
-  </footer>
+<footer id="footer">
+  <i class="bi bi-facebook"></i>
+  <i class="bi bi-instagram"></i>
+  <i class="bi bi-twitter"></i>
+  <i class="bi bi-linkedin"></i>
+  <p>© Copyright 2021 Shopnow</p>
+</footer>
+
 </html>
