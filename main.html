@@ -74,7 +74,13 @@
     <div class="container-fluid">
       <a class="navbar-brand"  id="navname" href="#">Shop Now</a>
       <script type="text/javascript">
-        document.getElementById('navname').innerHTML ="<strong>Hello,</strong> " + localStorage.getItem('username') ;
+        function usernameFromUrl() {
+         var parameter = location.search.substring(1).split("&");
+         var temp = parameter[0].split("=");
+         l = unescape(temp[1]);
+         document.getElementById('navname').innerHTML = "<strong>Hello,</strong> " + l ;
+       }
+        usernameFromUrl();
       </script>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
