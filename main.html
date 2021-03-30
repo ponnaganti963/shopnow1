@@ -11,7 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <style media="screen">
     body {
-      background-color: #fff;
+      background-color: #e7e7de;
     }
     .myba {
       background-color: lightblue;
@@ -21,23 +21,30 @@
     }
     #footer{
       text-align: center;
+      background-color: #fff;
+      margin-bottom: 1px;
     }
     #footer i{
-      margin: 1% ;
+      padding: 1%;
     }
     #footer p{
-      margin: 2% ;
+      padding: 2% ;
+      margin: auto;
     }
     .ma img {
       width: 100%;
       height: 200px;
       border-radius: 8px;
-      margin: 1% auto;
+      margin: 0.5% auto;
     }
     .flex{
       display: flex;
       justify-content: space-around;
 
+    }
+    .img_1{
+       background-color:  blue;
+      background-blend-mode: difference;
     }
     .stylecard{
       width: 160px;
@@ -66,6 +73,13 @@
       color: blue;
     }
   </style>
+
+  <script type="text/javascript">
+     function passing() {
+       var ad = document.getElementById('navname').innerHTML;
+        window.document.location = "one-plus.html" + "?username=" + ad;
+     }
+  </script>
 </head>
 
 <body>
@@ -74,7 +88,7 @@
     <div class="container-fluid">
       <a class="navbar-brand"  id="navname" href="#">Shop Now</a>
       <script type="text/javascript">
-        function usernameFromUrl() {
+         function usernameFromUrl() {
          var parameter = location.search.substring(1).split("&");
          var temp = parameter[0].split("=");
          l = unescape(temp[1]);
@@ -83,6 +97,7 @@
         usernameFromUrl();
       </script>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+
         <span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarToggler">
 
@@ -110,6 +125,7 @@
       </div>
     </div>
   </div>
+
   <div class="myba" style="color: white">
     <h1>░S░h░o░p░ ░N░o░w░</h1>
     <p>Keep shoping easyily and safely</p>
@@ -119,7 +135,7 @@
     <a href="#"><img src="car3.jpg" /></a>
   </div>
 
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 1% auto;">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 0.5% auto">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block w-100" style="height: 200px" alt="...">
@@ -141,18 +157,18 @@
     </button>
   </div>
 
-  <div class="container-fluid" style="padding-left: 1.5rem">
+  <div class="container-fluid" style="padding-left: 1.5rem;background-color: #fff">
     <div class="row flex">
-      <div class="col-auto" style="padding: 10px">
-        <a href="one-plus.html">
-          <div class="card stylecard">
+      <div class="col-auto"  style="padding: 10px">
+        <!-- <a href="one-plus.html"> -->
+          <div class="card stylecard" id="one" onclick="passing()">
             <img src="oneplus.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
-              <p>One Plus Nord 5g</p>
+              <p >One Plus Nord 5g</p>
               <p class="text-muted">₹ 29,000</p>
             </div>
           </div>
-        </a>
+        <!-- </a> -->
       </div>
       <div class="col-auto" style="padding: 10px">
         <a href="#">
@@ -213,29 +229,29 @@
     </div>
   </div>
 
-  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" style="margin: 2% auto">
+  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" style="margin: 0.5% auto">
     <div class="carousel-inner" style="background-color: #fff">
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-3 " style="padding: 2% 5%">
-            <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block " style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+          <div class="col-3 "   style="padding: 2% 5%">
+            <img src="kitchen.jfif" class="d-block img_1 "  style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
             <p class="text-muted" style="margin-left: 1rem">kitchen</p>
           </div>
           <div class="col-3" style="padding: 2% 5%">
-            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <img src="electronic_devices.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
             <p class="text-muted" style="margin-left: 1rem">electronics</p>
           </div>
           <div class="col-3" style="padding: 2% 5%">
-            <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block " style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <img src="shoes.jpeg" class="d-block img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
             <p class="text-muted" style="margin-left: 1rem">shoes</p>
           </div>
           <div class="col-3" style="padding: 2% 5%">
-            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
           </div>
         </div>
       </div>
       <div class="carousel-item" style="padding: 2% 5%">
-        <img src="shop.jpeg" class="d-block w-5" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+        <img src="shop.jpeg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
@@ -247,7 +263,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container-fluid" style="background-color: lightblue; text-align: center; bottom:0">
+  <div class="container-fluid" style="background-color: lightblue; text-align: center">
     <table class="table table-borderless">
       <thead>
         <tr>
@@ -280,10 +296,10 @@
     </table>
   </div>
 
-   <script src="jav.js" charset="utf-8"></script>
 </body>
 
 <footer id="footer">
+  <br>
   <i class="bi bi-facebook"></i>
   <i class="bi bi-instagram"></i>
   <i class="bi bi-twitter"></i>
