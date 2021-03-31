@@ -33,7 +33,7 @@
 
     .details {
       padding-top: 5%;
-      padding-left: 1%;
+      padding-left: 1.5%;
     }
 
     .buying button {
@@ -49,7 +49,7 @@
       margin: 0.5rem auto;
     }
     .title{
-      padding-left: 1.5%;
+      padding-left: 2%;
     }
 
     #footer{
@@ -73,9 +73,11 @@
     <div class="container-fluid">
       <a class="navbar-brand" id="navname" href="#">SHOP NOW</a>
       <script type="text/javascript">
-        var parameters = location.search.substring(1).split("=");
-        k = unescape(parameters[1]);
-        document.getElementById('navname').innerHTML = k;
+        // var parameters = location.search.substring(1).split("=");
+        // k = unescape(parameters[1]);
+        // document.getElementById('navname').innerHTML = k;
+
+        document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
       </script>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
@@ -83,7 +85,7 @@
 
         <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="main.html">»𝐇𝐨𝐦𝐞</a>
+            <a class="nav-link active"  href="main.html">»𝐇𝐨𝐦𝐞</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">»My account</a>
@@ -268,6 +270,7 @@
     </table>
   </div>
   <footer id="footer">
+    <br>
     <i class="bi bi-facebook"></i>
     <i class="bi bi-instagram"></i>
     <i class="bi bi-twitter"></i>
