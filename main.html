@@ -76,12 +76,17 @@
 
   <script type="text/javascript">
      function passing() {
-       var ad = document.getElementById('navname').innerHTML;
+       var ad = document.getElementById('navname').innerHTML.slice(7);
         window.document.location = "one-plus.html" + "?username=" + ad;
      }
      function passing1() {
        var ad = document.getElementById('navname').innerText.slice(7);
         window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
+     }
+     function goTOCart(){
+       var ad = document.getElementById('navname').innerHTML.slice(7);
+        window.document.location = "cart.html" + "?username=" + ad;
+
      }
 
   </script>
@@ -97,7 +102,7 @@
          var parameter = location.search.substring(1).split("&");
          var temp = parameter[0].split("=");
          const l = unescape(temp[1]);
-         document.getElementById('navname').innerHTML = "<strong>Hello,</strong> " + l ;
+         document.getElementById('navname').innerHTML = "Hello, " + l ;
           // document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
        }
         usernameFromUrl();
@@ -115,7 +120,7 @@
             <a class="nav-link " href="#">»My account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">»My Cart</a>
+            <a class="nav-link " onclick="goTOCart()" href="#">»My Cart</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">»Settings</a>
