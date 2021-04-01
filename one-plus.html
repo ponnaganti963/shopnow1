@@ -15,10 +15,7 @@
       background-color: #e7e7de;
     }
 
-    .sub {
-      overflow: hidden;
-      background-color: #fff;
-    }
+
 
     .flex {
       display: flex;
@@ -66,9 +63,18 @@
     }
   </style>
   <script type="text/javascript">
+   var  ad = document.getElementById('navname').innerText.slice(7);
      function passing() {
-       var ad = document.getElementById('navname').innerText.slice(7);
+        var  ad = document.getElementById('navname').innerText.slice(7);
         window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
+     }
+     function cartpass() {
+       var  ad = document.getElementById('navname').innerText.slice(7);
+       var heading = document.getElementById('headingpass').innerText;
+       var img = document.querySelector('#imgg').src;
+       var price = document.querySelector('#price').innerText;
+       var quantity = document.querySelector('select').value;
+       window.document.location = 'cart.html' + "?username=" + ad + " & " + "heading=" + heading + " &" + "source=" + img +" & " + "price=" + price + " & " + "Quantity=" + quantity ;
      }
   </script>
 </head>
@@ -81,7 +87,7 @@
       <script type="text/javascript">
         var parameters = location.search.substring(1).split("=");
         k = unescape(parameters[1]);
-        document.getElementById('navname').innerHTML = k;
+        document.getElementById('navname').innerHTML = "Hello, " + k;
 
         // document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
       </script>
@@ -118,14 +124,14 @@
   <div class="container1">
     <div class="d-flex flex">
       <div class="title">
-        <h2>OnePlus Nord 5G Unlocked Smartphone (90Hz Refresh Rate, 6GB RAM + 128GB storage).</h2>
+        <h2 id="headingpass">OnePlus Nord 5G Unlocked Smartphone (90Hz Refresh Rate, 6GB RAM + 128GB storage).</h2>
       </div>
       <div class="image1">
-        <img src="oneplus4.jpg" alt="" height="620px">
+        <img id="imgg" src="oneplus4.jpg" alt="" height="620px">
       </div>
       <div class="col-lg-6 col-sm-12 details">
         <div class="buying">
-          <p>Price: ₹ <del>29,000</del> <ins style="text-decoration: none">28,999</ins></p>
+          <p>Price: ₹ <del>29,000</del> <ins id="price" style="text-decoration: none">28,999</ins></p>
           <p>FREE delivery</p>
           <p>Order Now .</p>
           <h3 style="color: green">In Stock.</h3>
@@ -169,7 +175,7 @@
           </table>
           <form style="margin: 2rem auto;">
             <label>Qty:</label>
-            <select name="backdrop">
+            <select name="backdrop" >
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -186,7 +192,7 @@
             </select>
           </form>
           <div style="margin: 2rem auto">
-            <button type="button" class="btn btn-lg" style="background-color: #f0a500" name="button">Add to Chart</button>
+            <button type="button" class="btn btn-lg" onclick="cartpass()" style="background-color: #f0a500" name="button">Add to Chart</button>
             <button type="button" class="btn btn-lg btn-warning" name="button">Buy</button>
           </div>
         </div>
