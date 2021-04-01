@@ -65,6 +65,12 @@
       margin: auto;
     }
   </style>
+  <script type="text/javascript">
+     function passing() {
+       var ad = document.getElementById('navname').innerText.slice(7);
+        window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
+     }
+  </script>
 </head>
 
 <body>
@@ -73,11 +79,11 @@
     <div class="container-fluid">
       <a class="navbar-brand" id="navname" href="#">SHOP NOW</a>
       <script type="text/javascript">
-        // var parameters = location.search.substring(1).split("=");
-        // k = unescape(parameters[1]);
-        // document.getElementById('navname').innerHTML = k;
+        var parameters = location.search.substring(1).split("=");
+        k = unescape(parameters[1]);
+        document.getElementById('navname').innerHTML = k;
 
-        document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
+        // document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
       </script>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
@@ -85,7 +91,7 @@
 
         <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
           <li class="nav-item">
-            <a class="nav-link active"  href="main.html">»𝐇𝐨𝐦𝐞</a>
+            <a class="nav-link active" id="pa" onclick="passing()" >»𝐇𝐨𝐦𝐞</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#">»My account</a>
