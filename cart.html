@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Cart</title>
+     <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+      <style media="screen">
+      body {
+        background-color: #e7e7de;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #fff;
+        padding : 1rem;
+      }
+
+      #footer{
+        text-align: center;
+        background-color: #fff;
+        margin-bottom: 1px;
+      }
+      #footer i{
+        padding: 1%;
+      }
+      #footer p{
+        padding: 2% ;
+        margin: auto;
+      }
+    </style>
+    <script type="text/javascript">
+       function passing() {
+          var  ad = document.getElementById('navname').innerText.slice(7);
+          window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
+       }
+
+    </script>
+  </head>
+  <body>
+    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="navname" href="#">SHOP NOW</a>
+        <script type="text/javascript">
+          var parameter = location.search.substring(1).split("&");
+          var parameters = parameter[0].split("=");
+          k = unescape(parameters[1]);
+          document.getElementById('navname').innerHTML = "Hello, " +k;
+
+          // document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
+        </script>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+
+          <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
+            <li class="nav-item">
+              <a class="nav-link active" id="pa" onclick="passing()" >»𝐇𝐨𝐦𝐞</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">»My account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">»My Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">»Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="logout.html">»Logout</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Searching.." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex" id="cartId">
+      <div class="image" >
+          <img class="imgsrc" src="" alt="" height="170px" width="70">
+     </div>
+     <div class="col"  style="height: 100px; padding: 0.5rem">
+          <p class="heading"></p>
+
+      </div>
+      <div class="price" style="height: 100px">
+
+       </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #fff; margin: 0.5rem auto;padding-left: 20px">
+      <div>
+        <p>Quantity: <ins id="Qty" style="text-decoration: none">0</ins></p>
+      </div>
+       <p style="text-align: right"><strong>SubTotal: ₹</strong><ins id="subtotal" style="text-decoration: none">0</ins></p>
+       <div class="" style="text-align:center">
+         <button type="button" class="btn btn-lg btn-warning" name="button" style="width: 30%; margin-bottom: 1%">Proceed to Buy</button>
+       </div>
+    </div>
+
+
+
+    <div class="container-fluid" style="background-color: lightblue; text-align: center; ">
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th class="w-5" scope="col">
+              <h3>Get to know us</h3>
+            </th>
+            <th class="w-5" scope="col">
+              <h3>Let Us Help You</h3>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>careers</td>
+            <td>Your Account</td>
+          </tr>
+          <tr>
+            <td>About Shop Now</td>
+            <td>Your Orders</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Return & Replacement</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Shop Now Assistant</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer id="footer">
+      <br>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-linkedin"></i>
+      <p>© Copyright 2021 Shopnow</p>
+    </footer>
+    <script src="jav.js" charset="utf-8"></script>
+  </body>
+</html>
