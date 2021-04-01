@@ -38,6 +38,10 @@
           var  ad = document.getElementById('navname').innerText.slice(7);
           window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
        }
+       function goTOProduct(){
+         var  ad = document.getElementById('navname').innerText.slice(7);
+         window.document.location = "one-plus.html" + "?username=" + ad ;
+       }
 
     </script>
   </head>
@@ -82,7 +86,7 @@
       </div>
     </div>
     <div class="d-flex flex" id="cartId">
-      <div class="image" >
+      <div class="image" onclick="goTOProduct()" >
           <img class="imgsrc" src="" alt="" height="170px" width="70">
      </div>
      <div class="col"  style="height: 100px; padding: 0.5rem">
