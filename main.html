@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="main.js" charset="utf-8" async></script>
   <style media="screen">
     body {
       background-color: #e7e7de;
@@ -42,6 +43,15 @@
       justify-content: space-around;
 
     }
+
+    .styleHover{
+      opacity: 0.3;
+      color : red;
+    }
+    .add{
+      display: none;
+    }
+
     .img_1{
        background-color:  blue;
       background-blend-mode: difference;
@@ -175,10 +185,14 @@
           <div class="card stylecard" id="one" onclick="passing()">
             <img src="oneplus.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
-              <p >One Plus Nord 5g</p>
-              <p class="text-muted">₹ 29,000</p>
+              <p class="title">One Plus Nord 5g</p>
+              <p class="text-muted">₹ 28,999</p>
+            </div>
+            <div class="add">
+              <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
+
         <!-- </a> -->
       </div>
       <div class="col-auto" style="padding: 10px">
@@ -186,8 +200,11 @@
           <div class="card stylecard" >
             <img src="rolex.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
-              <p>Rolex Watch</p>
+              <p class="title">Rolex Watch</p>
               <p class="text-muted">₹ 25,000</p>
+            </div>
+            <div class="add">
+              <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
         </a>
@@ -197,8 +214,11 @@
           <div class="card stylecard " >
             <img src="nikeshoes.JPG" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
-              <p>Nike Shoes</p>
+              <p class="title">Nike Shoes</p>
               <p class="text-muted">₹ 2,570</p>
+            </div>
+            <div class="add">
+              <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
         </a>
@@ -208,8 +228,11 @@
           <div class="card stylecard " >
             <img src="iPad.jpg" class="card-img-top" height="110" alt="" />
             <div class="card-body p-0 styling" >
-              <p>iPad</p>
+              <p class="title">iPad</p>
               <p class="text-muted">₹ 48,470</p>
+            </div>
+            <div class="add">
+              <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
         </a>
@@ -220,8 +243,11 @@
           <div class="card stylecard">
             <img src="iphonemobile.JPG" class="card-img-top" alt="" />
             <div class="card-body p-0 styling">
-              <p>iphone mobile</p>
+              <p class="title">iphone mobile</p>
               <p class="text-muted">₹ 46,809</p>
+            </div>
+            <div class="add">
+              <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
         </a>
@@ -231,8 +257,11 @@
           <div class="card stylecard" >
             <img src="rolex.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
-              <p>Rolex Watch</p>
+              <p class="title">Rolex Watch</p>
               <p class="text-muted">₹ 25,000</p>
+            </div>
+            <div class="add">
+              <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
         </a>
