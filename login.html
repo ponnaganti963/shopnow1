@@ -31,11 +31,14 @@
     .conatiner1{
       padding-top:  80px ;
       padding-bottom:  80px ;
-     margin-right: 8rem;
+     margin-right: 6rem;
     }
 
     .icons{
      color: #fff;
+     font-size: 1.8rem;
+     display: contents;
+     padding-top: 5rem;
     }
 
    strong{
@@ -65,7 +68,7 @@
     } */
     .wrapper span{
   position: absolute;
-  left: 13rem;
+  left: 14.5rem;
   padding-bottom: 2.5rem ;
   transform: translateY(-50%);
   font-size: 20px;
@@ -101,16 +104,20 @@
   <div class="login">
     <form class="register-form conatiner1"   action="main.html" onsubmit="return validating()" style="transform: scaleX(-1)">
       <div class="row g-3 align-items-center"  style="font-size: 20px ">
-          <i class="bi bi-person-circle icons"></i>
+        <div class="icons">
+          <i class="bi bi-person-circle"></i>
+        </div>
         <div class="col-4">
-          <input type="text" name="Uname"  class="form-control" id="validationserver01"  style="caret-color: red;border-radius: 8px; border: none;width:15rem" placeholder="UserName" required>
+          <input type="text" name="Uname"  class="form-control" id="validationserver01"  style="caret-color: red;border-radius: 8px; border: none;width:15rem;border: groove" placeholder="UserName" required>
         </div>
       </div><br>
       <div class="row g-3 " style="font-size: 20px">
-        <i class="bi bi-file-earmark-lock2 icons"></i>
+        <div class="icons">
+          <i class="bi bi-file-earmark-lock2 "></i>
+        </div>
         <div class="col-4 wrapper">
 
-          <input type="password" class="form-control" id="pass" name="pass" style="caret-color: red;border-radius: 8px;width:15rem" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+          <input type="password" class="form-control" id="pass" name="pass" style="caret-color: red;border: groove;border-radius: 8px;width:15rem" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
           required>
           <span class="show-btn"><i class="bi bi-eye-fill i0" ></i></span>
         </div>
