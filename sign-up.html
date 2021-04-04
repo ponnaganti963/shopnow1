@@ -42,43 +42,56 @@
       color: white;
     }
 
-    .wrapper input:valid~span {
+    .wrapper input:valid~i {
       display: block;
     }
 
-    .wrapper span {
+    .wrapper i {
       position: absolute;
-
+      left: 15rem;
+      padding-bottom: 4.5rem;
       transform: translateY(-50%);
-      font-size: 20px;
       color: #000;
       cursor: pointer;
     }
-
-    .wrapper .show-btn1{
-      left: 21rem;
-      padding-bottom: 2.2rem;
+    input{
+      border-radius: 8px;
+      margin: 6% 3%;
+      outline: none;
+      border : 2px solid #000;
+      background: #b4aee8;
+      height: 40px;
+      width: 250px;
     }
+    .inputSpan{
+      position: absolute;
 
-    .wrapper .show-btn2{
-      left: 25rem;
-      padding-bottom: 2.2rem;
+      top: 19px;
+      left: 24px;
+      letter-spacing: 0.05rem;
+      pointer-events: none;
+      transition: .4s;
     }
+    input:focus{
+      outline: 2px solid #000;
+    }
+    input:focus + .inputSpan,
+    input:valid + .inputSpan{
+      top : -2px;
+      left : 25px;
+      padding: 0 10px;
+    background-blend-mode: lighten;
+    background: #b4aee8;
 
+    }
     .as {
-      background-image: url("shop.jpeg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+
       background-color: #b4aee8;
-      margin: 10px;
+
       border-radius: 10px;
       padding: 20px;
     }
 
-    #forms {
-      margin-left: 35px;
-
-    }
 
     .ba {
       font-size: 20px;
@@ -107,17 +120,14 @@
 
   <div class="as">
     <form class="register-form" id="forms" action="index1.html" onsubmit="return register()">
-      <div class="row g-3 align-items-center" style="padding-top:30px; padding-left:10px">
-        <div class="col-auto">
-          <label for="name" class="form-label"><b>Name</b> <strong>*</strong></label>
-        </div>
-        <div class="col-auto">
-          <input type="text" placeholder="Enter your name" class="form-control" required style="border: 1px solid" required>
-
+      <div class="row g-3 align-items-center" >
+        <div class="col-auto" style="position: relative">
+          <input type="text"  style="outline: none" required>
+          <span class="inputSpan">Name</span>
         </div>
       </div>
       <br>
-      <div class="form-check form-check-inline" style="padding-left:30px">
+      <div class="form-check form-check-inline" >
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
         <label class="form-check-label" for="inlineRadio1"><b>Male</b></label>
       </div>
@@ -130,39 +140,31 @@
         <label class="form-check-label" for="inlineRadio3"><b>Others</b></label>
       </div>
       <br><br>
-      <div class="row g-3 align-items-center" style="padding: 10px">
-        <div class="col-auto">
-          <label for="phonenumber" class="form-label"><b>Phone number</b></label>
-        </div>
-        <div class="col-auto">
-          <input type="text" placeholder="Enter Phone number" class="form-control" style="border: 1px solid">
+      <div class="row g-3 align-items-center" >
+        <div class="col-auto" style="position: relative">
+          <input type="text"  style="outline:none" required>
+          <span class="inputSpan">Phone Number</span>
         </div>
       </div>
-      <div class="row g-3 align-items-center" style="padding: 10px">
-        <div class="col-auto">
-          <label for="inputemail" class="col-form-label"><b>Email Id</b> <strong>*</strong></label>
-        </div>
-        <div class="col-auto">
-          <input type="email" class="form-control" placeholder="Enter Email Id" style="border: 1px solid" required>
+      <div class="row g-3 align-items-center">
+        <div class="col-auto" style="position: relative">
+          <input type="email" style="outline:none"  required>
+          <span class="inputSpan">Email</span>
         </div>
       </div>
-      <div class="row g-3 align-items-center" style="padding: 10px">
-        <div class="col-auto">
-          <label for="inputPassword6" class="col-form-label"><b>Password</b> <strong>*</strong></label>
-        </div>
-        <div class="col-auto wrapper">
-          <input type="password" class="form-control inputPassword6" placeholder="Enter password" style="border: 1px solid" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+      <div class="row g-3 align-items-center" >
+        <div class="col-auto wrapper" style="position: relative">
+          <input type="password" class="inputPassword6" style="outline:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
             required>
+            <span class="inputSpan">Password</span>
           <span class="show-btn1"><i class="bi bi-eye-fill i1"></i></span>
         </div>
       </div>
-      <div class="row g-3 align-items-center" style="padding: 10px">
-        <div class="col-auto ">
-          <label for="inputPassword6" class="col-form-label"><b>Conform Password</b> <strong>*</strong></label>
-        </div>
-        <div class="col-auto wrapper">
-          <input type="password" class="form-control inputPassword7" placeholder="Re-enter password" style="border: 1px solid" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+      <div class="row g-3 align-items-center" >
+        <div class="col-auto wrapper" style="position: relative">
+          <input type="password" class=" inputPassword7" style="outline:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
             required>
+            <span class="inputSpan">Conform Password</span>
           <span class="show-btn2"><i class="bi bi-eye-fill i2"></i></span>
         </div>
         <div class="col-auto">
