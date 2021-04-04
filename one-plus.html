@@ -48,14 +48,28 @@
     .title{
       padding-left: 2%;
     }
-
+    tbody tr :hover {
+      color: white;
+    }
+   .show{
+     display: none;
+   }
+   #mybtn{
+     margin-left: 1rem;
+   }
     #footer{
       text-align: center;
       background-color: #fff;
       margin-bottom: 1px;
     }
     #footer i{
-      padding: 1%;
+      padding: 1.5%;
+      transition: 0.5s;
+      border-radius: 100%;
+    }
+    #footer i:hover{
+      background-color: #333;
+      color: #fff;
     }
     #footer p{
       padding: 2% ;
@@ -207,45 +221,64 @@
     <ul class="row m-1">
       <li class="col-lg-6 col-sm-12 gap ">5G – Upgrade to the next stage of mobile technology, OnePlus Nord N10 5G packs an ultra-fast punch. Stay connected and enjoy the digital world without the long load times.</li>
       <li class="col-lg-6 col-sm-12 gap">Warp Charge 30T – Delivering a day’s power in 30 minutes, Warp Charge 30T combined with a massive battery gives you more time with your phone and less time charging.</li>
-      <li class="col-lg-6 col-sm-12 gap">90Hz Display – Sporting a display that refreshes 50% faster than standard 60Hz displays, the N10 5G display is super responsive and smooth.</li>
-      <li class="col-lg-6 col-sm-12 gap">Quad Camera – Unleash your inner photographer with the Nord N10 5G’s 64MP main camera, or capture other details with the ultra-wide, macro, or monochrome lens for additional options.</li>
+      <li class="col-lg-6 col-sm-12 gap show">90Hz Display – Sporting a display that refreshes 50% faster than standard 60Hz displays, the N10 5G display is super responsive and smooth.</li>
+      <li class="col-lg-6 col-sm-12 gap show">Quad Camera – Unleash your inner photographer with the Nord N10 5G’s 64MP main camera, or capture other details with the ultra-wide, macro, or monochrome lens for additional options.</li>
     </ul>
+    <button id="mybtn" onclick="myFunction()">Show more</button>
+    <script type="text/javascript">
+      function myFunction() {
+        var myText = document.querySelectorAll('.show');
+        var  btn = document.querySelector('#mybtn');
+
+        if(myText[0].style.display == "none"){
+          for(let i=0; i< myText.length; i++){myText[i].style.display = "list-item"; };
+          btn.innerHTML = "Show less";
+        }
+        else{
+          for(let i=0; i< myText.length; i++){myText[i].style.display = "none"; };
+          btn.innerHTML = "Show more";
+        }
+      }
+    </script>
   </div>
+
   <div class="container1">
     <div class="title">
       <h2>Product Images</h2>
     </div>
     <div class="container-img">
-      <div class="row m-1">
-        <div class="col-lg-6 col-sm-12" style="text-align: center">
-          <img src="oneplus3.jpg" alt="i am image" height="700px" width="320px" style="margin: 20px auto">
+      <div class="row " style="margin: auto 40px">
+        <div class="col-lg-2 col-sm-12" style="text-align: center">
+          <img src="oneplus3.jpg" alt="i am image" height="500px" width="200px"  style="margin: 10px">
         </div>
-        <div class="col-lg-6 col-sm-12" style="margin: auto; line-height: 2">
+        <div class="col-lg-8 col-sm-12" style="margin: auto; line-height: 2">
           <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
             performance.</p>
         </div>
       </div>
 
+      <div class="row " style="margin: auto 40px">
+        <div class="col-lg-2 col-sm-12" style="text-align: center">
+          <img src="oneplus4.jpg" alt="" height="500px" width="200px"  style="margin: 10px">
+        </div>
+        <div class="col-lg-8 col-sm-12" style="margin: auto; line-height: 2">
+          <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
+            performance.</p>
+        </div>
+      </div>
+      <div class="row" style="margin: auto 40px">
+        <div class="col-lg-2 col-sm-12" style="text-align: center">
+          <img src="oneplus5.jpg" alt="i am image" height="500px" width="200px"  style="margin: 10px">
+        </div>
+        <div class="col-lg-8 col-sm-12" style="margin: auto; line-height: 2">
+          <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
+            performance.</p>
+        </div>
+      </div>
     </div>
-    <div class="row m-1" >
-      <div class="col-lg-6 col-sm-12" style="text-align: center">
-        <img src="oneplus4.jpg" alt="" height="700px" width="320px" style="margin: 20px auto">
-      </div>
-      <div class="col-lg-6 col-sm-12" style="margin: auto; line-height: 2">
-        <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
-          performance.</p>
-      </div>
+
     </div>
-    <div class="row m-1">
-      <div class="col-lg-6 col-sm-12" style="text-align: center">
-        <img src="oneplus5.jpg" alt="i am image" height="700px" width="320px" style="margin: 20px auto">
-      </div>
-      <div class="col-lg-6 col-sm-12" style="margin: auto; line-height: 2">
-        <p>OnePlus Nord N10 5G brings the most affordable premium 5G experience to the market. It brings the power of 5G to more consumers along with burdenless user experience, 90 Hz smooth display, Warp charge 30T, and high-quality quad-camera
-          performance.</p>
-      </div>
-    </div>
-  </div>
+
 
   </div>
   </div>
