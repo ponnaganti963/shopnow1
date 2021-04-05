@@ -41,9 +41,7 @@
      padding-top: 5rem;
     }
 
-   strong{
-     color: red;
-   }
+
     h1 {
       font-family: 'Lora', serif;
       color: white;
@@ -59,16 +57,12 @@
     .wrapper{
       display: inline;
     }
-    .wrapper input:valid ~ span{
+    .wrapper input:valid ~ .span{
    display: block;
  }
-    /* label {
-      color: white;
-      font-size: 20px;
-    } */
-    .wrapper span{
+    .wrapper .show-btn{
   position: absolute;
-  left: 14.5rem;
+  left: 15rem;
   padding-bottom: 2.5rem ;
   transform: translateY(-50%);
   font-size: 20px;
@@ -76,9 +70,28 @@
   cursor: pointer;
 }
 
-    button :hover{
-      color: red;
-    }
+.inputspan{
+  position: absolute;
+  top: 80px;
+  background-color: #000;
+  color:#fff;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+  width:37px;
+  height:40px;
+}
+.inputspan1{
+  position: absolute;
+  top: 145px;
+  background-color: #000;
+  color:#fff;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+  width:37px;
+  height:40px;
+}
+
+
     a {
       text-decoration: none;
       color: black;
@@ -88,7 +101,7 @@
       color: red;
     }
   </style>
-
+  
 </head>
 
 <body>
@@ -97,28 +110,27 @@
     <h1>Login Page</h1>
   </div>
   <hr style="border-top:1px dotted red; background-color: white">
-  <a class="ba" href="index1.html" style="font-size: 20px">
-    <<b>Back</b>
+
+  <a class="ba" href="index1.html">
+    <i class="bi bi-backspace-fill" style="margin-left: 10px;font-size: 40px"></i>
   </a>
 
   <div class="login">
     <form class="register-form conatiner1"   action="main.html" onsubmit="return validating()" style="transform: scaleX(-1)">
       <div class="row g-3 align-items-center"  style="font-size: 20px ">
-        <div class="icons">
-          <i class="bi bi-person-circle"></i>
-        </div>
-        <div class="col-4">
-          <input type="text" name="Uname"  class="form-control" id="validationserver01"  style="caret-color: red;border-radius: 8px; border: none;width:15rem;border: groove" placeholder="UserName" required>
+
+        <div class="col-5">
+          <input type="text" name="Uname"  class="form-control" id="validationserver01"  style="border-radius: 8px;font-weight: bold;width:17rem;border: groove;padding-left:40px ;position: relative" placeholder="UserName" required>
+          <span class="inputspan" ><i style="padding:30%;bottom: 20px" class="bi bi-person-circle"></i></span>
         </div>
       </div><br>
       <div class="row g-3 " style="font-size: 20px">
-        <div class="icons">
-          <i class="bi bi-file-earmark-lock2 "></i>
-        </div>
-        <div class="col-4 wrapper">
 
-          <input type="password" class="form-control" id="pass" name="pass" style="caret-color: red;border: groove;border-radius: 8px;width:15rem" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+        <div class="col-5 wrapper">
+
+          <input type="password" class="form-control" id="pass" name="pass" onPaste="return false" onCopy="return false" onDrag="return false" onCut="return false" onDrop="return false" autocomplete=off style="border: groove;font-weight: bold;border-radius: 8px;width:17rem;position:relative;padding-left:40px " placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
           required>
+          <span class="inputspan1"><i style="padding:30%;bottom: 20px" class="bi bi-file-earmark-lock2 "></i></span>
           <span class="show-btn"><i class="bi bi-eye-fill i0" ></i></span>
         </div>
       </div><br>
