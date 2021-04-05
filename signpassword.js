@@ -3,6 +3,7 @@ function register() {
   var password = document.querySelector('.inputPassword6').value;
   var conformPassword = document.querySelector('.inputPassword7').value;
   if (password === conformPassword) {
+    alert('successfully Registered!!');
     return true;
   } else {
     document.querySelector('.form-text').innerText = "Password Should be same.";
