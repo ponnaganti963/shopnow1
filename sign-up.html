@@ -14,7 +14,7 @@
 
   <style media="screen">
     body {
-      background-color: #a7c5eb;
+      /* background-color: #a7c5eb; */
     }
 
     .container1 {
@@ -48,48 +48,48 @@
 
     .wrapper i {
       position: absolute;
-      left: 15rem;
-      padding-bottom: 4.5rem;
+      left: 18rem;
+      padding-bottom: 5.1rem;
       transform: translateY(-50%);
       color: #000;
       cursor: pointer;
     }
     input{
       border-radius: 8px;
-      margin: 6% 3%;
+      margin: 6% auto 6% 13%;
       outline: none;
+      font-weight: bold;
       border : 2px solid #000;
       background: #b4aee8;
-      height: 40px;
-      width: 250px;
+      padding-left: 15px;
+      height: 50px;
+      width: 270px;
     }
     .inputSpan{
       position: absolute;
-
-      top: 19px;
-      left: 24px;
+      top: 28px;
+      left: 50px;
       letter-spacing: 0.05rem;
       pointer-events: none;
       transition: .4s;
     }
-    input:focus{
-      outline: 2px solid #000;
-    }
+
     input:focus + .inputSpan,
     input:valid + .inputSpan{
       top : -2px;
-      left : 25px;
+      left : 50px;
       padding: 0 10px;
-    background-blend-mode: lighten;
     background: #b4aee8;
 
     }
     .as {
-
+      text-align: center;
       background-color: #b4aee8;
-
+      width: 400px;
+      margin: auto;
       border-radius: 10px;
       padding: 20px;
+
     }
 
 
@@ -98,11 +98,8 @@
       color: black;
     }
 
-    .modal-content {
-      font-family: 'Redressed', cursive;
-      font-size: 30px;
-    }
   </style>
+
 </head>
 
 <body>
@@ -115,7 +112,7 @@
   </div>
   <hr>
   <a class="ba" href="index1.html">
-    <<b>Back</b>
+    <i class="bi bi-backspace-fill" style="margin-left: 10px;font-size: 40px"></i>
   </a>
 
   <div class="as">
@@ -123,7 +120,7 @@
       <div class="row g-3 align-items-center" >
         <div class="col-auto" style="position: relative">
           <input type="text"  style="outline: none" required>
-          <span class="inputSpan">Name</span>
+          <span class="inputSpan">Name <strong>*</strong></span>
         </div>
       </div>
       <br>
@@ -142,29 +139,29 @@
       <br><br>
       <div class="row g-3 align-items-center" >
         <div class="col-auto" style="position: relative">
-          <input type="text"  style="outline:none" required>
-          <span class="inputSpan">Phone Number</span>
+          <input type="tel"  style="outline:none" pattern="[0-9]{10}" maxlength="10" required>
+          <span class="inputSpan">Phone Number <strong>*</strong></span>
         </div>
       </div>
       <div class="row g-3 align-items-center">
         <div class="col-auto" style="position: relative">
           <input type="email" style="outline:none"  required>
-          <span class="inputSpan">Email</span>
+          <span class="inputSpan">Email <strong>*</strong></span>
         </div>
       </div>
       <div class="row g-3 align-items-center" >
         <div class="col-auto wrapper" style="position: relative">
-          <input type="password" class="inputPassword6" style="outline:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+          <input type="password" class="inputPassword6" style="outline:none" onPaste="return false" onCopy="return false" onDrag="return false" onCut="return false" onDrop="return false" autocomplete=off pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
             required>
-            <span class="inputSpan">Password</span>
+            <span class="inputSpan">Password <strong>*</strong></span>
           <span class="show-btn1"><i class="bi bi-eye-fill i1"></i></span>
         </div>
       </div>
       <div class="row g-3 align-items-center" >
         <div class="col-auto wrapper" style="position: relative">
-          <input type="password" class=" inputPassword7" style="outline:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+          <input type="password" class=" inputPassword7" style="outline:none" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"onPaste="return false" onCopy="return false" onDrag="return false" onCut="return false" onDrop="return false" autocomplete=off title="Must Contain alteast One capital ,numbers and special characters."
             required>
-            <span class="inputSpan">Conform Password</span>
+            <span class="inputSpan">Conform Password <strong>*</strong></span>
           <span class="show-btn2"><i class="bi bi-eye-fill i2"></i></span>
         </div>
         <div class="col-auto">
@@ -173,13 +170,13 @@
           </span>
         </div>
       </div>
-      <div class="form-check form-check-inline" style="padding: 15px; margin-left:20px">
+      <div class="form-check form-check-inline" style="margin-left:15px">
         <input class="form-check-input" type="checkbox" id="flexCheckIndeterminate" required>
         <label class="form-check-label" for="flexCheckIndeterminate">
           I Read and agree <a href="terms&conditons.html">Terms & Conditons</a>.
         </label>
       </div><br>
-      <input type="submit" class="btn btn-primary" value="𝕽𝖊𝖌𝖎𝖘𝖙𝖊𝖗" onclick="register()" style="padding:10px 30px 10px 30px; font-size: 20px; margin-left: 30px">
+      <input type="submit" class="btn btn-primary" value="𝕽𝖊𝖌𝖎𝖘𝖙𝖊𝖗" onclick="register()" style=" font-size: 25px; margin-left: 10px">
 
       <div class="container-signin" style="padding: 20px">
         <p><b>Already have an account? <a href="login.html">Sign in</a>.</b></p>
