@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+  <script src="one-plus.js" charset="utf-8" async></script>
   <style media="screen">
     body {
       background-color: #e7e7de;
@@ -48,7 +48,7 @@
     .title{
       padding-left: 2%;
     }
-    tbody tr :hover {
+    .tablehover tr :hover {
       color: white;
     }
    .show{
@@ -76,31 +76,22 @@
       margin: auto;
     }
   </style>
-  <script type="text/javascript">
-   var  ad = document.getElementById('navname').innerText.slice(7);
-     function passing() {
-        var  ad = document.getElementById('navname').innerText.slice(7);
-        window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
-     }
-     function cartpass() {
-       var  ad = document.getElementById('navname').innerText.slice(7);
-       var heading = document.getElementById('headingpass').innerText;
-       var img = document.querySelector('#imgg').src;
-       var price = document.querySelector('#price').innerText;
-       var quantity = document.querySelector('select').value;
-       window.document.location = 'cart.html' + "?username=" + ad + " & " + "heading=" + heading + " &" + "source=" + img +" & " + "price=" + price + " & " + "Quantity=" + quantity ;
-     }
-  </script>
+
 </head>
 
 <body>
 
-  <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="ba" onclick="passing()">
+    <i class="bi bi-backspace-fill" style="margin-left: 10px;font-size: 40px"></i>
+  </a>
+
+  <!-- <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" id="navname" href="#">SHOP NOW</a>
       <script type="text/javascript">
-        var parameters = location.search.substring(1).split("=");
-        k = unescape(parameters[1]);
+        var parameters = location.search.substring(1).split("&");
+        var userpart = parameters[0].split("=");
+        k = unescape(userpart[1]);
         document.getElementById('navname').innerHTML = "Hello, " + k;
 
         // document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
@@ -132,7 +123,7 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <div class="container1">
@@ -225,21 +216,7 @@
       <li class="col-lg-6 col-sm-12 gap show">Quad Camera – Unleash your inner photographer with the Nord N10 5G’s 64MP main camera, or capture other details with the ultra-wide, macro, or monochrome lens for additional options.</li>
     </ul>
     <button id="mybtn" onclick="myFunction()">Show more</button>
-    <script type="text/javascript">
-      function myFunction() {
-        var myText = document.querySelectorAll('.show');
-        var  btn = document.querySelector('#mybtn');
 
-        if(myText[0].style.display == "none"){
-          for(let i=0; i< myText.length; i++){myText[i].style.display = "list-item"; };
-          btn.innerHTML = "Show less";
-        }
-        else{
-          for(let i=0; i< myText.length; i++){myText[i].style.display = "none"; };
-          btn.innerHTML = "Show more";
-        }
-      }
-    </script>
   </div>
 
   <div class="container1">
@@ -294,7 +271,7 @@
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="tablehover">
         <tr>
           <td>careers</td>
           <td>Your Account</td>
