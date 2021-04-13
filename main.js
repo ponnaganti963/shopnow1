@@ -8,8 +8,6 @@ if(te[0] == "pass"){
 }else{
   if(te[1] === ""){
     idArray = [];
-    console.log(idArray);
-    alert("it");
   }
   else{
     var i = te[1].split(",");
