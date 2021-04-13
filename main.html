@@ -50,11 +50,6 @@
       justify-content: space-around;
 
     }
-
-    .styleHover{
-      opacity: 0.3;
-      color : red;
-    }
     .add{
       position: absolute;
       top: 100px;
@@ -100,22 +95,7 @@
     }
   </style>
 
-  <script type="text/javascript">
-     function passing() {
-       var ad = document.getElementById('navname').innerHTML.slice(7);
-        window.document.location = "one-plus.html" + "?username=" + ad;
-     }
-     function passing1() {
-       var ad = document.getElementById('navname').innerText.slice(7);
-        window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
-     }
-     function goTOCart(){
-       var ad = document.getElementById('navname').innerHTML.slice(7);
-        window.document.location = "cart.html" + "?username=" + ad;
 
-     }
-
-  </script>
 </head>
 
 <body>
@@ -205,7 +185,7 @@
     <div class="row flex">
       <div class="col-auto"  style="padding: 10px">
         <!-- <a href="one-plus.html"> -->
-          <div class="card stylecard" id="one" onclick="passing()">
+          <div class="card stylecard" id="1" onclick="passing()">
             <img src="oneplus.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
               <p class="title">One Plus Nord 5g</p>
@@ -221,7 +201,7 @@
       </div>
       <div class="col-auto" style="padding: 10px">
         <a href="#">
-          <div class="card stylecard" >
+          <div class="card stylecard" id="2" >
             <img src="rolex.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
               <p class="title">Rolex Watch</p>
@@ -231,11 +211,12 @@
               <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
+
         </a>
       </div>
       <div class="col-auto" style="padding: 10px">
         <a href="#">
-          <div class="card stylecard " >
+          <div class="card stylecard " id="3">
             <img src="nikeshoes.JPG" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
               <p class="title">Nike Shoes</p>
@@ -245,11 +226,12 @@
               <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
+
         </a>
       </div>
       <div class="col-auto" style="padding: 10px">
         <a href="#">
-          <div class="card stylecard " >
+          <div class="card stylecard " id="4">
             <img src="iPad.jpg" class="card-img-top" height="110" alt="" />
             <div class="card-body p-0 styling" >
               <p class="title">iPad</p>
@@ -259,12 +241,13 @@
               <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
+
         </a>
       </div>
 
       <div class="col-auto" style="padding: 10px">
         <a href="#">
-          <div class="card stylecard">
+          <div class="card stylecard" id="5">
             <img src="iphonemobile.JPG" class="card-img-top" alt="" />
             <div class="card-body p-0 styling">
               <p class="title">iphone mobile</p>
@@ -274,20 +257,22 @@
               <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
+
         </a>
       </div>
       <div class="col-auto" style="padding: 10px">
         <a href="#">
-          <div class="card stylecard" >
+          <div class="card stylecard" id="6">
             <img src="rolex.jfif" class="card-img-top" alt="" />
             <div class="card-body p-0 styling" >
-              <p class="title">Rolex Watch</p>
-              <p class="text-muted">₹ 25,000</p>
+              <p class="title">Rolex Watch x</p>
+              <p class="text-muted">₹ 30,000</p>
             </div>
             <div class="add">
               <button type="button" class="btn btn-danger btn-lg ">Add To Cart</button>
             </div>
           </div>
+
         </a>
       </div>
     </div>
