@@ -19,7 +19,9 @@
         background-color: #fff;
         padding : 1rem;
       }
-
+      .emptyCart{
+        display: none;
+      }
       #footer{
         text-align: center;
         background-color: #fff;
@@ -32,21 +34,18 @@
         padding: 2% ;
         margin: auto;
       }
+      .liss{
+        padding-right: 20px;
+      }
     </style>
-    <script type="text/javascript">
-       function passing() {
-          var  ad = document.getElementById('navname').innerText.slice(7);
-          window.document.location = "main.html" + "?username=" + ad + " & jahsd=asda";
-       }
-       function goTOProduct(){
-         var  ad = document.getElementById('navname').innerText.slice(7);
-         window.document.location = "one-plus.html" + "?username=" + ad ;
-       }
-
-    </script>
   </head>
   <body>
-    <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="ba" onclick="passIt()">
+      <i class="bi bi-backspace-fill" style="margin-left: 10px;font-size: 40px"></i>
+    </a>
+
+    <!-- <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" id="navname" href="#">SHOP NOW</a>
         <script type="text/javascript">
@@ -63,13 +62,13 @@
 
           <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
             <li class="nav-item">
-              <a class="nav-link active" id="pa" onclick="passing()" >»𝐇𝐨𝐦𝐞</a>
+              <a class="nav-link active" id="pa" onclick="passIt()" >»𝐇𝐨𝐦𝐞</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#">»My account</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">»My Cart</a>
+              <a class="nav-link " id="goto">»My Cart</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#">»Settings</a>
@@ -84,8 +83,16 @@
           </form>
         </div>
       </div>
+    </div> -->
+
+    <div class="emptyCart" style="background-color: #fff;margin: 10px auto ;text-align:center">
+      <img src="https://coverhouse.in/assets/images/empty-cart.jpg" alt="" width="100%" height="500px">
+      <button type="button" class="btn btn-lg btn-warning" onclick="passIt()" id="continueShop">Continue Shopping</button>
     </div>
-    <div class="d-flex flex" id="cartId">
+
+
+
+    <!-- <div class="d-flex flex" id="cartId">
       <div class="image" onclick="goTOProduct()" >
           <img class="imgsrc" src="" alt="" height="170px" width="70">
      </div>
@@ -106,9 +113,34 @@
        <div class="" style="text-align:center">
          <button type="button" class="btn btn-lg btn-warning" name="button" id="buy" style="padding: 0.5% 8% ; margin-bottom: 1%">Proceed to Buy</button>
        </div>
+    </div> -->
+
+
+
+    <div class=" productCart " id="cartId" style="padding: 1rem; background-color: #fff">
+      <div class="productTitle" style="display:flex">
+        <div class="col-6" id="liss1" >
+          <span>ITEM</span>
+          <hr style="margin-right:10px">
+        </div>
+        <div class="col-3" id="liss2">
+          <span>QUANTITY</span>
+          <hr style="margin-right:10px">
+        </div>
+        <div class="col-3" id="liss3" >
+          <span>PRICE</span>
+          <hr style="margin-right:10px">
+        </div>
+      </div>
     </div>
 
 
+    <div class="container-fluid butSection" style="background-color: #fff; margin: 0.5rem auto;padding-left: 20px">
+       <p style="text-align: right"><strong>SubTotal: ₹</strong><ins id="subtotal" style="text-decoration: none">0</ins></p>
+       <div class="" style="text-align:center">
+         <button type="button" class="btn btn-lg btn-warning" name="button" id="buy" style="padding: 0.5% 8% ; margin-bottom: 1%">Proceed to Buy</button>
+       </div>
+    </div>
 
     <div class="container-fluid" style="background-color: lightblue; text-align: center; ">
       <table class="table table-borderless">
