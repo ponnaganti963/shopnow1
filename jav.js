@@ -11,11 +11,17 @@ const products = {
 
 var parameters = location.search.substring(1).split("&");
 var idpara = parameters[1].split("=");
-var i = idpara[1].split(",");
-for(let p=0; p<i.length ; p++){
-    i[p] = parseInt(i[p]);
+if(idpara[1] === ""){
+  idArray=[];
 }
-idArray = idArray.concat(i);
+else{
+
+  var i = idpara[1].split(",");
+  for(let p=0; p<i.length ; p++){
+      i[p] = parseInt(i[p]);
+  }
+  idArray = idArray.concat(i);
+}
 if(document.readyState == 'loading'){
    document.addEventListener('DOMContentLoaded',ready)
 }else{
@@ -25,6 +31,8 @@ function ready(){
   var parameters = location.search.substring(1).split("&");
   if(idArray.length <1 || idArray[0] == NaN){
     idArray =[];
+    alert("inuf");
+    alert(idArray);
     var emptyShow = document.querySelector('.emptyCart');
     emptyShow.style.display = "list-item";
 
@@ -52,7 +60,7 @@ function ready(){
     // i = unescape(splitting.slice(-1));
     showCartProducts();
     function showCartProducts(){
-  
+
       for(var i=0; i<idArray.length; i++){
         var newDiv = document.createElement('div');
         newDiv.style.display = "flex";
