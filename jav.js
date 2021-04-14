@@ -31,6 +31,7 @@ function ready(){
   var parameters = location.search.substring(1).split("&");
   if(idArray.length <1 || idArray[0] == NaN){
     idArray =[];
+
     var emptyShow = document.querySelector('.emptyCart');
     emptyShow.style.display = "list-item";
 
@@ -128,17 +129,18 @@ function ready(){
 
 
 var changeQty = document.querySelectorAll('#Qty');
+var titleOf = document.querySelectorAll('.col-6 h4')
 var removebtn = document.querySelectorAll('.remove');
   for(let i=0; i<changeQty.length ; i++){
     removebtn[i].addEventListener('click',function(){
-      removeFromCart(i);
+      removeFromCart(titleOf[i]);
     });
     changeQty[i].addEventListener('change',function(){
       if(isNaN(this.value) ){
         this.value = 1;
       }
       else if (this.value == 0) {
-        removeFromCart(i);
+        removeFromCart(titleOf[i]);
       }
       updateCartTotal();
     });
@@ -147,19 +149,25 @@ var removebtn = document.querySelectorAll('.remove');
 
   function removeFromCart(i){
     alert("It will be removed from the cart");
-    var removeId = idArray[i];
-    idArray.splice(i,1);
-    var scr = document.querySelectorAll('.col-6 h4');
+
+    var titleis = i.innerText;
+
     var divRemove = document.querySelectorAll('.productTitle');
-    for(let j=0; j<scr.length; j++){
-      var srctext = scr[j].innerText;
-      if(srctext === products[removeId][1]){
-        divRemove[j+1].remove();
-      }
-    }
+
+   for(let k=1; k<=6; k++){
+     if(titleis === products[k][1]){
+       var a = idArray.indexOf(k);
+       idArray.splice(a,1);
+       divRemove[a+1].remove();
+
+     }
+   }
+
+
    if(idArray.length === 0){
        ready();
    }
+   updateCartTotal();
   }
   var buy = document.querySelector('#buy');
   buy.addEventListener('click',function(){
@@ -177,7 +185,7 @@ function passIt() {
   var parameters = location.search.substring(1).split("&");
   var userpart = parameters[0].split("=");
   var userparameter = unescape(userpart[1]);
-   window.document.location = "main.html" + "?username=" + userparameter + " & id=" + idArray;
+   window.document.location = "main.html" + "?username=" + userparameter + "&" + "id=" + idArray;
 }
 
 function updateCartTotal(){
