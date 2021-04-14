@@ -31,8 +31,6 @@ function ready(){
   var parameters = location.search.substring(1).split("&");
   if(idArray.length <1 || idArray[0] == NaN){
     idArray =[];
-    alert("inuf");
-    alert(idArray);
     var emptyShow = document.querySelector('.emptyCart');
     emptyShow.style.display = "list-item";
 
