@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop Now</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+  <style>
+    #mybg {
+      font-family: 'Akaya Telivigala', cursive;
+      background-color: lightblue;
+      border-radius: 12px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 30px;
+      height: 700px;
+      color: black;
+    }
+
+    #mybg p {
+      font-size: 30px;
+    }
+
+    body {
+      background-image: url("back.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      opacity: 0.9;
+    }
+
+    @media screen and (max-widht:1000px) {
+      body {
+        background-color: red;
+      }
+    }
+
+    .welcome {
+      width: 250px;
+      overflow: hidden;
+      margin: 30px auto;
+      text-align: center;
+      padding: 65px;
+      background: #e4fbff;
+      border-radius: 15px;
+    }
+
+    #logg {
+      border-radius: 8px;
+      background-color: #ffbe0f;
+      background-position: center;
+      text-align: center;
+      width: 6cm;
+      height: 3cm;
+      font-size: 39px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    #logg :hover {
+      color: white;
+    }
+
+    #Signn {
+
+      border-radius: 8px;
+      background-color: #ffbe0f;
+      background-position: center;
+      text-align: center;
+      width: 6cm;
+      height: 3cm;
+      font-size: 39px;
+      font-style: italic;
+    }
+
+    #Signn :hover {
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+ <script type="text/javascript">
+   var userdetails = [];
+   var ad  = location.search.substring(1).split("=");
+   function jumpTolog(){
+     alert(ad);
+     window.document.location = "login.html" + "?userdetails=" + ad[1];
+   }
+   function jumpToSign(){
+     window.document.location = "sign-up.html" + "?userdetails=" + ad[1];
+   }
+ </script>
+
+</head>
+
+<body>
+  <div class="col-3-auto" id="mybg">
+    <h1><em>𝓦𝓮𝓵𝓬𝓸𝓶𝓮</em></h1>
+    <h1 style="font-size: 8rem">Shop Now</h1>
+    <p>Shop easyily , shop safely.</p>
+  </div>
+  <br><br>
+
+  <div class="welcome">
+    <form id="welcome" >
+      <button type="button" id="logg" name="login"><a  onclick="jumpTolog()">𝐋𝐨𝐠 𝐈𝐧</a></button><br>
+      <button type="button" id="Signn" name="signin"><a onclick="jumpToSign()">Sign Up</a></button>
+    </form>
+  </div>
+
+
+</body>
+
+</html>

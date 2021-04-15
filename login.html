@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Kaushan+Script&family=Lora:ital@1&family=Permanent+Marker&family=Redressed&display=swap" rel="stylesheet">
+  <style media="screen">
+    body {
+      background-color: #e8eae6;
+    }
+
+    .login {
+      background-image: url("shop1.jpeg");
+      transform: scaleX(-1);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100% 100%;
+      overflow: hidden;
+
+      border-radius: 15px;
+
+    }
+
+    .conatiner1{
+      padding-top:  80px ;
+      padding-bottom:  80px ;
+     margin-right: 6rem;
+    }
+
+    .icons{
+     color: #fff;
+     font-size: 1.8rem;
+     display: contents;
+     padding-top: 5rem;
+    }
+
+
+    h1 {
+      font-family: 'Lora', serif;
+      color: white;
+      border-radius: 12px;
+      background: #28527a;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 50px;
+      height: 200px;
+    }
+
+    .wrapper{
+      display: inline;
+    }
+    .wrapper input:valid ~ .span{
+   display: block;
+ }
+    .wrapper .show-btn{
+  position: absolute;
+  left: 15rem;
+  padding-bottom: 2.5rem ;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+.inputspan{
+  position: absolute;
+  top: 80px;
+  background-color: #000;
+  color:#fff;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+  width:37px;
+  height:40px;
+}
+.inputspan1{
+  position: absolute;
+  top: 143px;
+  background-color: #000;
+  color:#fff;
+  border-top-left-radius:8px;
+  border-bottom-left-radius:8px;
+  width:37px;
+  height:40px;
+}
+
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a :hover {
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div >
+    <h1>Login Page</h1>
+  </div>
+  <hr style="border-top:1px dotted red; background-color: white">
+
+  <a class="ba"  onclick="passit()">
+    <i class="bi bi-backspace-fill" style="margin-left: 10px;font-size: 40px"></i>
+  </a>
+
+  <div class="login">
+    <form class="register-form conatiner1"    onsubmit="return validating()" style="transform: scaleX(-1)">
+      <div class="row g-3 align-items-center"  style="font-size: 20px ">
+
+        <div class="col-5">
+          <input type="text" name="Uname"  class="form-control" id="validationserver01"  style="border-radius: 8px;font-weight: bold;width:17rem;border: groove;padding-left:40px ;position: relative" placeholder="UserName" required>
+          <span class="inputspan" ><i style="padding:30%;bottom: 20px" class="bi bi-person-circle"></i></span>
+        </div>
+      </div><br>
+      <div class="row g-3 " style="font-size: 20px">
+
+        <div class="col-5 wrapper">
+
+          <input type="password" class="form-control" id="pass" name="pass" onPaste="return false" onCopy="return false" onDrag="return false" onCut="return false" onDrop="return false" autocomplete=off style="border: groove;font-weight: bold;border-radius: 8px;width:17rem;position:relative;padding-left:40px " placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+          required>
+          <span class="inputspan1"><i style="padding:30%;bottom: 20px" class="bi bi-file-earmark-lock2 "></i></span>
+          <span class="show-btn"><i class="bi bi-eye-fill i0" ></i></span>
+        </div>
+      </div><br>
+      <div class="form-check form-check-inline" style="font-size: 20px">
+        <input class="form-check-input" id="checkin" type="checkbox" required>
+        <label class="form-check-label" for="flexCheckIndeterminate" style="color: #fff" >
+          Remember me
+        </label>
+      </div><br>
+       <input type="button" class="btn btn-primary btn-lg" onclick="validating()" style="margin: 10px auto; font-size: 25px" value="𝕷𝖔𝖌 𝕴𝖓">
+      <div class="row g-3">
+        <div class="col" style="color: white">
+          Don't have an account? <a href="sign-up.html"><strong style="font-family: 'Permanent Marker', cursive; font-size:20px">Register</strong></a> here
+        </div>
+      </div>
+
+      <div class="row" style="margin-left: 10px auto 10px auto">
+
+        <div class="col" style=" font-size: 20px">
+          <a href="#"><b>Forgot Password</b></a>
+        </div>
+      </div>
+  </div>
+<script src="password.js" charset="utf-8"></script>
+
+  <!-- <div class="login" >
+      <form class="register-form conatiner"   action="main.html" onsubmit="return validating()" style="transform: scaleX(-1)">
+        <div class="row g-3 align-items-center"  style="font-size: 20px ">
+          <div class="col-md-auto">
+            <label for="validationserver01" class="form-label"><b>User Name</b> <strong>*</strong></label>
+          </div>
+          <div class="col-md-auto">
+            <input type="text" name="Uname"  class="form-control" id="validationserver01"  style="caret-color: red;border-radius: 8px; border-top : none;background-color: none" placeholder="UserName" required>
+            <span id="namee"></span>
+          </div>
+        </div><br>
+        <div class="row g-3 " style="font-size: 20px">
+          <div class="col-md-auto">
+            <label class="form-label"><b>Password</b> <strong>*</strong></label>
+          </div>
+          <div class="col-md-auto wrapper">
+            <input type="password" class="form-control" id="pass" name="pass" style="caret-color: red;border-radius: 8px" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must Contain alteast One capital ,numbers and special characters."
+            required>
+            <span class="show-btn"><i class="bi bi-eye-fill" ></i></span>
+          </div>
+        </div><br>
+        <div class="form-check form-check-inline" style="font-size: 20px">
+          <input class="form-check-input" id="checkin" type="checkbox" required>
+          <label class="form-check-label" for="flexCheckIndeterminate" >
+            Remember me
+          </label>
+        </div><br>
+         <input type="submit" class="btn btn-primary btn-lg" onclick="validating()" style="margin: 10px auto; font-size: 25px" value="𝕷𝖔𝖌 𝕴𝖓">
+        <div class="row g-3">
+          <div class="col" style="color: white">
+            Don't have an account? <a href="sign-up.html"><strong style="font-family: 'Permanent Marker', cursive; font-size:20px">Register</strong></a> here
+          </div>
+        </div>
+
+        <div class="row" style="margin-left: 10px auto 10px auto">
+
+          <div class="col" style=" font-size: 20px">
+            <a href="#"><b>Forgot Password</b></a>
+          </div>
+        </div>
+      </form>
+  </div> -->
+
+</body>
+
+</html>

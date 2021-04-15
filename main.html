@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="main.js" charset="utf-8" async></script>
+  <style media="screen">
+    body {
+      background-color: #e7e7de;
+    }
+    .myba {
+      background-color: lightblue;
+      text-align: center;
+      border-radius: 10px;
+      padding: 40px;
+    }
+    #footer{
+      text-align: center;
+      background-color: #fff;
+      margin-bottom: 1px;
+    }
+    #footer i{
+      padding: 1.5%;
+      transition: 0.5s;
+      border-radius: 100%;
+    }
+    #footer i:hover{
+      background-color: #333;
+      color: #fff;
+    }
+
+    #footer p{
+      padding: 2% ;
+      margin: auto;
+    }
+    .ma img {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      margin: 0.5% auto;
+    }
+    .flex{
+      display: flex;
+      justify-content: space-around;
+
+    }
+    .add{
+      position: absolute;
+      top: 100px;
+      left: 60px;
+      display: none;
+    }
+    .alert{
+      display: none;
+    }
+
+    .img_1{
+       background-color:  blue;
+      background-blend-mode: difference;
+
+    }
+    .img_1:hover{
+      animation: 1s spin  infinite ;
+    }
+    @keyframes spin {
+      from{transform: rotateZ(0deg);}
+      to{transform: rotateZ(360deg);}
+    }
+    .stylecard{
+      position: relative;
+      width: 160px;
+      height: 180px;
+    }
+    .stylecard:hover{
+     box-shadow: 0 10px 50px rgba( 0, 0, 255, .2);
+     transform: scale(1.1);
+    }
+    .styling{
+      overflow: hidden;
+
+      text-align: center;
+      background-color: #fff;
+    }
+    tbody tr :hover {
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand"  id="navname" href="#">Shop Now</a>
+      <script type="text/javascript">
+         function usernameFromUrl() {
+         var parameter = location.search.substring(1).split("&");
+         var temp = parameter[0].split("=");
+         const l = unescape(temp[1]);
+         document.getElementById('navname').innerHTML = "Hello, " + l ;
+          // document.getElementById('navname').innerHTML = "Hello ," + localStorage.getItem('username');
+       }
+        usernameFromUrl();
+      </script>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+
+        <ul class="navbar-nav me-auto mb-2 md-sm-0" style="font-size: 25px">
+          <li class="nav-item">
+            <a class="nav-link active" onclick="passing1()">»𝐇𝐨𝐦𝐞</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " onclick="goToAccount()">»My account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " onclick="goTOCart()" >»My Cart <span class="badge bg-secondary"></span></a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">»Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="logout.html">»Logout</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" list="post" type="search" placeholder="Searching.." aria-label="Search">
+          <datalist id="post">
+            <option value="Rolex Watch"></option>
+            <option value="Nike Shoes"></option>
+            <option value="One Plus Nord 5g"></option>
+            <option value="iPad"></option>
+            <option value="iphone mobile"></option>
+          </datalist>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="myba" style="color: white">
+    <h1>░S░h░o░p░ ░N░o░w░</h1>
+    <p>Keep shoping easyily and safely</p>
+  </div>
+
+  <div class="ma">
+    <a href="#"><img src="car3.jpg" /></a>
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin: 0.5% auto">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/186/463/original/crazy-sale-offer-discount-banner-voucher-template-design-vector.jpg" class="d-block w-100" style="height: 200px" alt="...">
+      </div>
+      <div class="carousel-item" style="height: 200px">
+        <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-100" style="height: 200px" alt="...">
+      </div>
+      <div class="carousel-item" style="height: 200px">
+        <img src="shop.jpeg" class="d-block w-100" style="height: 250px" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container-fluid" style="padding-left: 1.5rem;background-color: #fff">
+    <div class="row flex">
+      <div class="col-auto"  style="padding: 10px">
+        <!-- <a href="one-plus.html"> -->
+          <div class="card stylecard" id="1" >
+            <img src="oneplus.jfif" class="card-img-top" onclick="passing()" alt="" />
+            <div class="card-body p-0 styling" >
+              <p class="title">One Plus Nord 5g</p>
+              <p class="text-muted">₹ 28,999</p>
+            </div>
+            <div class="add">
+              <button type="button" style="border-radius: 100%" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart" delay:100 ><i class="bi bi-cart-plus"></i></button>
+            </div>
+            <div class="alert alert-success" role="alert">
+              Successfully added to cart.
+            </div>
+          </div>
+
+
+        <!-- </a> -->
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <!-- <a href="#"> -->
+          <div class="card stylecard" id="2" >
+            <img src="rolex.jfif" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling" >
+              <p class="title">Rolex Watch</p>
+              <p class="text-muted">₹ 25,000</p>
+            </div>
+            <div class="add">
+              <button type="button" style="border-radius: 100%" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart" delay:100 ><i class="bi bi-cart-plus"></i></button>
+            </div>
+            <div class="alert alert-success" role="alert">
+              Successfully added to cart.
+            </div>
+          </div>
+
+        <!-- </a> -->
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <!-- <a href="#"> -->
+          <div class="card stylecard " id="3">
+            <img src="nikeshoes.JPG" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling" >
+              <p class="title">Nike Shoes</p>
+              <p class="text-muted">₹ 2,570</p>
+            </div>
+            <div class="add">
+              <button type="button" style="border-radius: 100%" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart" delay:100 ><i class="bi bi-cart-plus"></i></button>
+            </div>
+            <div class="alert alert-success" role="alert">
+              Successfully added to cart.
+            </div>
+          </div>
+
+        <!-- </a> -->
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <!-- <a href="#"> -->
+          <div class="card stylecard " id="4">
+            <img src="iPad.jpg" class="card-img-top" height="110" alt="" />
+            <div class="card-body p-0 styling" >
+              <p class="title">iPad</p>
+              <p class="text-muted">₹ 48,470</p>
+            </div>
+            <div class="add">
+              <button type="button" style="border-radius: 100%" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart" delay:100 ><i class="bi bi-cart-plus"></i></button>
+            </div>
+            <div class="alert alert-success" role="alert">
+              Successfully added to cart.
+            </div>
+          </div>
+
+        <!-- </a> -->
+      </div>
+
+      <div class="col-auto" style="padding: 10px">
+        <!-- <a href="#"> -->
+          <div class="card stylecard" id="5">
+            <img src="iphonemobile.JPG" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling">
+              <p class="title">iphone mobile</p>
+              <p class="text-muted">₹ 46,809</p>
+            </div>
+            <div class="add">
+              <button type="button" style="border-radius: 100%" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart" delay:100 ><i class="bi bi-cart-plus"></i></button>
+            </div>
+            <div class="alert alert-success" role="alert">
+              Successfully added to cart.
+            </div>
+          </div>
+
+        <!-- </a> -->
+      </div>
+      <div class="col-auto" style="padding: 10px">
+        <!-- <a href="#"> -->
+          <div class="card stylecard" id="6">
+            <img src="rolex.jfif" class="card-img-top" alt="" />
+            <div class="card-body p-0 styling" >
+              <p class="title">Rolex Watch x</p>
+              <p class="text-muted">₹ 30,000</p>
+            </div>
+            <div class="add">
+              <button type="button" style="border-radius: 100%" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add to cart" delay:100 ><i class="bi bi-cart-plus"></i></button>
+            </div>
+            <div class="alert alert-success" role="alert">
+              Successfully added to cart.
+            </div>
+          </div>
+
+        <!-- </a> -->
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" style="margin: 0.5% auto">
+    <div class="carousel-inner" style="background-color: #fff">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-3 "   style="padding: 2% 5%">
+            <img src="kitchen.jfif" class="d-block img_1 "  style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <p class="text-muted" style="margin-left: 1rem">kitchen</p>
+          </div>
+          <div class="col-3" style="padding: 2% 5%">
+            <img src="electronic_devices.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <p class="text-muted" style="margin-left: 1rem">electronics</p>
+          </div>
+          <div class="col-3" style="padding: 2% 5%">
+            <img src="shoes.jpeg" class="d-block img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+            <p class="text-muted" style="margin-left: 1rem">shoes</p>
+          </div>
+          <div class="col-3" style="padding: 2% 5%">
+            <img src="https://i.pinimg.com/originals/7e/80/74/7e8074e2c9e9ce46dbd87b1baacf3960.jpg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" style="padding: 2% 5%">
+        <img src="shop.jpeg" class="d-block w-5 img_1" style="width: 6rem;height: 100px;border-radius: 100%" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container-fluid" style="background-color: lightblue; text-align: center;padding: 1px">
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col">
+            <h3>Get to know us</h3>
+          </th>
+          <th scope="col">
+            <h3>Let Us Help You</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>careers</td>
+          <td>Your Account</td>
+        </tr>
+        <tr>
+          <td>About Shop Now</td>
+          <td>Your Orders</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Return & Replacement</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Shop Now Assistant</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+<footer id="footer">
+  <br>
+  <a href="#"><i class="bi bi-facebook"></i></a>
+  <a href="#"><i class="bi bi-instagram"></i></a>
+  <a href="#"><i class="bi bi-twitter"></i></a>
+  <a href="#"><i class="bi bi-linkedin"></i></a>
+  <p>© Copyright 2021 Shopnow</p>
+</footer>
+</html>
